@@ -11,14 +11,27 @@
         }
     </style>
     <script>
+        function allowDrop(ev){
+            ev.preventDefault();
+        }
 
+        //放置
+        function drag(ev){
+            ev.dataTransfer.setData("Text",ev.target.id);
+        }
+        //拖动
+        function drop(ev){
+            ev.preventDefault();
+            var data=ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+        }
     </script>
 </head>
 <body>
     <p>拖动图片</p>
-    <div id="div1">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
 
     </div>
-    <img id="drag1" src="apple-tv-48.png" draggable="true">
+    <img id="drag1" src="apple-tv-48.png" draggable="true" ondragstart="drag(event)" alt="无法显示图片">
 </body>
 </html>
