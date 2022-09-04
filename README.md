@@ -1,10 +1,10 @@
-# Java前端
+# Java前端练习
 
 #### 介绍
 Java前端练习
 
 #### 软件架构
-软件架构说明
+HTML+CSS+Javascript
 
 
 #### 安装教程
