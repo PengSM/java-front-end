@@ -1,0 +1,1 @@
+https://pupucloud.live/api/v1/client/subscribe?token=f4939fb5bdca423090e7856c58ebad31
